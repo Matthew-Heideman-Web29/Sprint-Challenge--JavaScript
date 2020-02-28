@@ -15,13 +15,13 @@ function consume(a, b, callback){
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-function consume(a, b, add){
-  return add(a + b);
+function add(a, b, consume){
+  return a + b;
 }
-function consume(a, b, multiply){
-  return multiply(a * b);
+function multiply(a, b, consume){
+  return a * b;
 }
-function consume(first_name, last_name, greeting){
+function greeting(first_name, last_name, consume){
   return `Hello ${first_name} ${last_name}, nice to meet you!`
 }
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
