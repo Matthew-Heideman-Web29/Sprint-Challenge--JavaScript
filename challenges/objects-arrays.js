@@ -91,15 +91,18 @@ for (i = 0; i < graduates.length; i++) {
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [];
-for(i = 0; i < graduates.length; i++){
-  if(graduates[i].university.includes('Uni') == graduates[i].university.indexOf('Uni')){
-    unisWithUni.push(graduates[i].university);
-  }
-}
-console.log(unisWithUni);
+// const unisWithUni = [];
+// for(i = 0; i < graduates.length; i++){
+//   if(graduates[i].university.includes('Uni') == graduates[i].university.indexOf('Uni')){
+//     unisWithUni.push(graduates[i].university);
+//   }
+//}
 
-
+// console.log(unisWithUni);
+const ordered = universities.filter(item =>
+  item.includes('Uni')
+);
+console.log(ordered);
 // ==== ADVANCED Array Methods ====
 
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.

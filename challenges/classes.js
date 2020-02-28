@@ -5,14 +5,19 @@ class CuboidMaker {
         this.width = dimensions.width,
         this.height = dimensions.height
     }
-    volume(){
-        return dimensions.length * dimensions.width * dimensions.height;
+    volume = function(){
+        return this.length * this.width * this.height;
     }
     surfaceArea(){
         return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
     }
 }
-//const cuboid = new CuboidMaker (4, 5, 5);
+const cuboid = new CuboidMaker ({
+    length: 4, 
+    width: 5, 
+    height: 5
+    }   
+    );
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 console.log(cuboid.volume()); // 100
 console.log(cuboid.surfaceArea()); // 130
